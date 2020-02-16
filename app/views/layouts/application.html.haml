@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title NecoPic
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    -# %script{src: "javascripts/vendor/modernizr.custom.min.js"}
+    -# %script{src: "javascripts/vendor/jquery-3.4.1.min.js"}
+    -# %script{src: "javascripts/application.js"}
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    
+
+  %body
+    #stalker
+    -# .wrap
+    -#   %a{:href => "###"} Stick Link
+    -#   %a.no_stick_{:href => "###"} No Stick
+
+    = yield
