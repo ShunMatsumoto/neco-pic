@@ -6,7 +6,6 @@
         %ul.menu-list
           %li.user-name
             = link_to "#", class: "header_list_link" do
-              -# %img{src: "icons/猫のシルエット白.png", alt: "white_cat", width: "30px"}
               %p ぬこ様
           %li.new-post
             = link_to "#", class: "header_list_link" do
@@ -17,9 +16,12 @@
           %li.logout
             = link_to "#", class: "header_list_link" do
               %p ログアウト
+              -# %img{src: "icons/猫のシルエット白.png", alt: "white_cat", width: "30px"}
+
 
 
     .index__box__main
+      %script{src: "http://nejimaki-act.com/lab/cube/js/cube.js"}
       .index__box__main__box
         .index__box__main__box__main-title
           %h2.titile They are wonderful cats
@@ -28,27 +30,36 @@
             %ul.contents
               %li.content
                 = link_to "#", class: "cat_list" do
+                  %span
                   = image_tag '/images/cat-1.jpg', alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
-                  %p neko-pic
+                  %p neko-pic1
               %li.content
                 = link_to "#", class: "cat_list" do
+                  %span
                   = image_tag '/images/cat-2.jpg', alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
-                  %p neko-pic
+                  %p neko-pic2
               %li.content
                 = link_to "#", class: "cat_list" do
+                  %span
                   = image_tag '/images/cat-3.jpg', alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
-                  %p neko-pic
+                  %p neko-pic3
               %li.content
                 = link_to "#", class: "cat_list" do
+                  %span
                   = image_tag '/icons/Neco-Pic.png', alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
-                  %p neko-pic
+                  %p neko-pic4
               %li.content
-              %li.content
-              %li.content
-
-
-
-
+                = link_to "#", class: "cat_list" do
+                  %span
+                  = image_tag '/icons/猫のシルエット白.png', alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
+                  %p neko-pic5
 
 
     .index__box__footer
+      .index__box__footer__smooth-scroll
+        = image_tag '/icons/矢印ボタン上2.png', alt: '上矢印', height: '30', width: '30', class: 'smooth-icon'
+      .index__box__footer__links
+        .index__box__footer__links__box
+          .index__box__footer__links__box__footer-icons
+            = image_tag '/icons/twitter.png', alt: 'cat_image', height: '50', width: '50', calss: "footer-icon"
+            = image_tag '/icons/youtube.png', alt: 'cat_image', height: '50', width: '50', calss: "footer-icon"
