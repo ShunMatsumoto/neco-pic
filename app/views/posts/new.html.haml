@@ -1,0 +1,32 @@
+.posts-new
+  .posts-new__box
+    .posts-new__box__header
+      = render 'shared/header'
+    
+    .posts-new__box__main
+      .posts-new__box__main__contents
+        = form_for @post do |f|
+          .posts-new__box__main__contents__heading
+            The best moment
+
+          .posts-new__box__main__contents__title-box
+            .posts-new__box__main__contents__title-box__title
+              %p Title
+            .posts-new__box__main__contents__title-box__form
+              = f.text_field :title, class: 'title-form', placeholder: 'タイトルを入力してください'
+
+          .posts-new__box__main__contents__description-box
+            .posts-new__box__main__contents__description-box__description
+              %p description
+            .posts-new__box__main__contents__description-box__form
+              = f.text_area :description, class: 'description-form', placeholder: '説明文を入力してください'
+
+
+          .posts-new__box__main__contents__image-box
+            .posts-new__box__main__contents__image-box__image
+              %p image
+            .posts-new__box__main__contents__image-box__form
+              = f.file_field :image, class: 'posts-new__box__main__contents__image-box__form', placeholder: 'ネコ画像を入力してください'
+
+          .posts-new__box__main__contents__submit
+            = f.submit 'Submit', class: 'posts-new__box__main__contents__submit-btn'
