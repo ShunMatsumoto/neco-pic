@@ -6,7 +6,7 @@ $(function () {
     .on('mouseover', function() {
       $(this).stop(true).animate({
         borderWidth: '7px',
-        borderColor: '#888'
+        borderColor: '#888',
       }, duration);
     })
     .on('mouseout', function() {

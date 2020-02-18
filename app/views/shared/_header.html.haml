@@ -1,0 +1,20 @@
+.index__box__header
+  .index__box__header__icon
+    = link_to root_path do
+      .index__box__header__icon
+  .index__box__header__menu-list
+    %ul.menu-list
+      %li.user-name
+        = link_to edit_user_path(current_user), class: "header_list_link" do
+          %p
+            = current_user.name
+      %li.new-post
+        = link_to new_post_path(current_user), class: "header_list_link" do
+          %p 新規投稿
+      %li.post-index
+        = link_to "#", class: "header_list_link" do
+          %p 投稿一覧
+      %li.logout
+        = link_to  destroy_user_session_path, method: :delete, class: "header_list_link" do
+          %p ログアウト
+          -# %img{src: "icons/猫のシルエット白.png", alt: "white_cat", width: "30px"}
