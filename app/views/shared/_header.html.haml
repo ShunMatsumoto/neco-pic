@@ -12,7 +12,7 @@
         = link_to new_post_path(current_user), class: "header_list_link" do
           %p 新規投稿
       %li.post-index
-        = link_to "#", class: "header_list_link" do
+        = link_to user_path(current_user), class: "header_list_link" do
           %p 投稿一覧
       %li.logout
         = link_to  destroy_user_session_path, method: :delete, class: "header_list_link" do
