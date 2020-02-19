@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+.user-show__box {
+  padding: 60px 250px;
+
+  &__contents {
+    padding: 20px;
+
+    &__content {
+      // width: 100%;
+      // height: 300px;
+      // background-color: #fff;
+      // border: solid 1px #888;
+      // padding: 5px;
+      // display: flex;
+      // justify-content: space-between;
+
+      .contents {
+        width: 100%;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 300px;
+          background-color: #fff;
+          border: solid 1px #888;
+          padding: 5px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+      }
+
+      &__image {
+        width: 45%;
+        height: 100%;
+        background-color: antiquewhite;
+      }
+
+      &__title-text {
+        width: 50%;
+        height: 100%;
+
+        &__title {
+          width: 100%;
+          height: 15%;
+          border: solid 1px #888;
+          margin-bottom: 5px;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          overflow-x: scroll;
+          font-family: 'Ubuntu Mono', monospace;
+        }
+
+        &__text {
+          width: 100%;
+          height: 239px;
+          border: solid 1px #888;
+          padding: 5px;
+          overflow: scroll;
+          font-family: 'Ubuntu Mono', monospace;
+        }
+      }
+    }
+  }
+}

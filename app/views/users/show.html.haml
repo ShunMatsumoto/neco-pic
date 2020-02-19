@@ -1,0 +1,22 @@
+.user-show
+  = render "shared/header"
+
+  .user-show__box
+    .user-show__box__contents
+      .user-show__box__contents__content
+        %ul.contents
+          - @posts.each do |post|
+            %li.cntent
+              .user-show__box__contents__content__image
+                = image_tag post.image, alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
+              .user-show__box__contents__content__title-text
+                .user-show__box__contents__content__title-text__title
+                  %p
+                    = post.title
+                .user-show__box__contents__content__title-text__text
+                  %p
+                    = post.description
+    
+    
+    .user-show__box__page-nate
+      = paginate @posts
