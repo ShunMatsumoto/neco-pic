@@ -6,9 +6,19 @@
       .user-show__box__contents__content
         %ul.contents
           - @posts.each do |post|
-            %li.cntent
+            %li.cotent
               .user-show__box__contents__content__image
-                = image_tag post.image, alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
+                = image_tag post.image, alt: 'cat_image', height: '100%', width: '100%', calss: "cat_image"
+              .user-show__box__contents__content__downer-btn
+                = image_tag '/icons/矢印ボタン下2.png', alt: '矢印下', height: '30', width: '30', class: 'downer-btn'
+              .user-show__box__contents__content__btns
+                .user-show__box__contents__content__btns__edit
+                  = link_to '#', class: 'edit-btn' do
+                    %p 編集
+                .user-show__box__contents__content__btns__destroy
+                  = link_to "/posts/#{post.user_id}", class: 'destroy-btn', method: :delete do
+                    %p 削除
+
               .user-show__box__contents__content__title-text
                 .user-show__box__contents__content__title-text__title
                   %p
