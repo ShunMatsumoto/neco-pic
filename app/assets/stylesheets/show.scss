@@ -30,6 +30,8 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
+          position: relative;
+          overflow: hidden;
         }
       }
 
@@ -37,6 +39,41 @@
         width: 45%;
         height: 100%;
         background-color: antiquewhite;
+      }
+
+      &__downer-btn {
+        position: absolute;
+        top: 0px;
+        padding: 10px;
+        opacity: 1;
+      }
+
+      &__btns {
+        position: absolute;
+        top: -100px;
+        padding: 10px;
+        background-color: darkgray;
+        font-family: 'Ubuntu Mono', monospace;
+        width: 60px;
+        height: 100px;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        // opacity: 0;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+
+
+        &__edit {
+          padding: 10px 0 20px 0;
+          color: #fff;
+        }
+
+        &__destroy {
+          color: #fff;
+        }
       }
 
       &__title-text {
