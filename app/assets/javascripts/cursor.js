@@ -1,6 +1,6 @@
 $(function () {
   //マウスストーカー用のdivを取得
-  const stalker = document.getElementById('stalker');
+  let stalker = document.getElementById('stalker');
 
   //aタグにホバー中かどうかの判別フラグ
   let hovFlag = false;
