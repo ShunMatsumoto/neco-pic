@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   # delete 'posts/:id' => 'posts#destroy'
 
   resources :users, only: [:show, :edit, :update]
-  resources :posts, only: [:new, :create]
+  resources :posts, only: [:new, :create, :show]
 end

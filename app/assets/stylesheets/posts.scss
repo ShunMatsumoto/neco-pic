@@ -22,7 +22,7 @@
     &__header {
       height: 85px;
       width: 100%;
-      background-color: #ecdfc8;
+      background-color: #527318;
       display: flex;
       box-shadow:0px 0px 10px;
       border:1px solid #888;
@@ -56,16 +56,16 @@
               padding: 5px 32px;
               margin: 16px;
               border-radius: 50px;
-              background: #c9753d;
+              background: #fffacd;
               margin: 0 auto;
               font-size: 17px;
               font-family: 'Ubuntu Mono', monospace;
-              border: solid 0px #cfb495;
+              border: solid 0px #feb72b;
 
               p {
                 margin: 0 auto;
                 font-size: 17px;
-                color: #fff;
+                color: #527318;
                 font-family: 'Ubuntu Mono', monospace;
               }
             }
@@ -87,9 +87,9 @@
 
         &__main-title {
           font-family: 'Ubuntu Mono', monospace;
-          font-size: 20px;
+          font-size: 100px;
           text-align: center;
-          padding-bottom: 20px;
+          padding: 150px 0;
         }
 
         &__contents {
@@ -101,14 +101,15 @@
             .contents {
               width: 100%;
               display: flex;
+              justify-content: center;
               flex-wrap: wrap;
 
               .content {
                 height: 260px;
                 width: 18.5%;
-                background-color: #cfb495;
+                background-color: #ffe75e;
                 border-radius: 50%;
-                margin: 0 10px 50px;
+                margin: 0 60px 80px;
                 position: relative;
                 overflow: hidden;
                 box-shadow:0px 0px 10px;
@@ -158,7 +159,7 @@
     &__footer {
       height: 150px;
       width: 100%;
-      background-color: #ecdfc8;
+      background-color: #527318;
       position: absolute;
       // position: fixed;
       box-shadow:0px 0px 10px;

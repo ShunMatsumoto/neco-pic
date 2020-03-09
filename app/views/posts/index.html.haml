@@ -14,7 +14,7 @@
             %ul.contents
               - @posts.each do |post|
                 %li.content
-                  = link_to "#", class: "cat_list" do
+                  = link_to post_path(post), class: "cat_list" do
                     %span
                     = image_tag post.image, alt: 'cat_image', height: '95%', width: '95%', calss: "cat_image"
                     %p
