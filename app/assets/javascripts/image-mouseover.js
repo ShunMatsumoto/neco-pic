@@ -1,6 +1,6 @@
 $(function () {
 
-  var duration = 300;
+  var duration = 350;
 
   $('.contents .content')
     .on('mouseover', function() {
@@ -24,7 +24,7 @@ $(function () {
 
     .on('mouseover', function () {
       $(this).stop(true).animate({
-        top: '-20px'
+        top: '-50px'
       }, duration);
     })
     .on('mouseout', function () {
