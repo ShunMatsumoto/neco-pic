@@ -66,4 +66,4 @@ gem 'devise'
 
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 
-gem 'kaminari', '~> 0.17.0'
+gem 'kaminari', '~> 1.2.1'
