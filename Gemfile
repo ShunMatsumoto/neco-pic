@@ -64,6 +64,6 @@ gem 'haml-rails'
 
 gem 'devise'
 
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave', '~> 1.3'
 
 gem 'kaminari', '~> 0.17.0'
